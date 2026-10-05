@@ -1,0 +1,24 @@
+{
+  "name": "wang-tiles-backend",
+  "version": "1.0.0",
+  "description": "Wang 色边方块拼接与无解原因核验后端（TypeScript + Node.js + 内置 SQLite）",
+  "type": "commonjs",
+  "main": "dist/server.js",
+  "bin": {
+    "wang": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "test": "tsc -p tsconfig.json && node --test \"dist/test/*.test.js\"",
+    "demo": "node dist/cli.js demo",
+    "cli": "node dist/cli.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^22.9.0"
+  }
+}
